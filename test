@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script type="text/javascript" src="paper-full.js"></script>
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/paperscript" canvas="myCanvas">
+    // The Path.Circle constructor takes a Point(x, y), and a radius
+    let myBall = new Path.Circle(new Point(70, 70), 50);
+    myBall.fillColor = 'tomato';
+
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>
